@@ -17,7 +17,7 @@ from sklearn.pipeline import Pipeline
 
 
 #Load dataset. This data is was downloaded from basketball reference.com
-df = pd.read_csv('/Users/nmsievers/Desktop/celtics_nba.csv')
+df = pd.read_csv('celtics_nba.csv')
 
 #Make all columns lowercase
 df.columns = df.columns.str.lower()
