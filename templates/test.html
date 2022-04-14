@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <title>Celtics Machine Learning Model</title> 
+  
+</head>
+  <body>
+    <div class="header" style="color:green;font-size:100%;">
+       <h1><img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8f/Boston_Celtics.svg/1200px-Boston_Celtics.svg.png" style="width:75px;height:75px;" alt="logo"/> Boston Celtics Machine Learning Model</h1>
+    </div>       
+    <p>
+    The Boston Celtics have been one of the most exciting teams in the NBA during the 2021-2022 season. From a lackluster start, they ended the season with the best defense in the NBA and as the second best team in the Eastern Conference. This model uses Decision Tree Classifiers to predict the outcome of the next Celtics game.
+    </p>
+
+            <form action="/predict" method="POST">
+                <b> Home Or Away:  <select name="home_away" id="home_away">
+                    <option value = 0>Away</option>
+                    <option value = 1 selected="selected">Home</option>
+                </select><br><br>
+                    Opponent:  <select name="opp" id="opp">
+                        <option value="" selected disabled hidden>Choose here</option>
+                        <option value= 'ATL'>Atlanta Hawks</option>
+                        <option value= 'BNK'>Brooklyn Nets</option>
+                        <option value= 'CHI'>Chicago Bulls</option>
+                        <option value= 'CHO'>Charlotte Hornets</option>
+                        <option value= 'CLE'>Cleveland Cavaliers</option>
+                        <option value= 'DAL'>Dallas Mavericks</option>
+                        <option value= 'DEN'>Denver Nuggets</option>
+                        <option value= 'DET'>Detroit Pistons</option>
+                        <option value= 'GSW'>Golden State Warriors</option>
+                        <option value= 'HOU'>Houston Rockets</option>
+                        <option value= 'IND'>Indiana Pacers</option>
+                        <option value= 'LAC'>Los Angeles Clippers</option>
+                        <option value= 'LAL'>Los Angeles Lakers</option>
+                        <option value= 'MEM'>Memphis Grizzlies</option>
+                        <option value= 'MIA'>Miami Heat</option>
+                        <option value= 'MIL'>Milwaukee Bucks</option>
+                        <option value= 'MIN'>Minnesota Timberwolves</option>
+                        <option value= 'NOP'>New Orleans Pelicans</option>
+                        <option value= 'NYK'>New York Knicks</option>
+                        <option value= 'OKC'>Oklahoma City Thunder</option>
+                        <option value= 'ORL'>Orlando Magic</option>
+                        <option value= 'PHI'>Philadelphia 76ers</option>
+                        <option value= 'PHO'>Phoenix Suns</option>
+                        <option value= 'POR'>Portland Trail Blazers</option>
+                        <option value= 'SAC'>Sacremento Kings</option>
+                        <option value= 'SAS'>San Antonio Spurs</option>
+                        <option value= 'TOR'>Toronto Raptors</option>
+                        <option value= 'UTA'>Utah Jazz</option>
+                        <option value= 'WAS'>Washington Wizards</option>
+                      </select> <br><br>
+                    Points Scored:  <input type="text" name = "celtics_points" placeholder="0" step="1" min="0" max="200"> <br><br>
+                    Field Goal Percentage: <input type="text" name = 'c_fgp' placeholder="0" step="0.01" min="0" max="1"> <br><br>
+                    Three Point Percentage: <input type="text" name = 'three' placeholder="0" step="0.01" min="0" max="1"> <br><br>
+                    Number of Assists: <input type="text" name= "c_ast" placeholder="0" step="1" min="0" max="100"> <br><br>
+                    Number of Total Rebounds: <input type="text" name = "c_trb" placeholder="0" step="1" min="0" max="100"> <br><br>
+                    <br></b>
+                  
+                    <button type="submit"> Predict Win or Loss</button>
+            <div>
+                    <br><b>
+                    {{pred}}
+                    </b><br>
+             </div>       
+             </form>
+
+  </body>    
+</html> 
