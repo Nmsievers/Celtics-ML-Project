@@ -22,7 +22,6 @@ tensorboard-plugin-wit==1.8.1
 tensorflow==2.8.0
 tensorflow-io-gcs-filesystem==0.24.0
 termcolor==1.1.0
-terminado==0.8.3
 testpath==0.4.4
 tf-estimator-nightly==2.8.0.dev2021122109
 virtualenv==20.14.0
