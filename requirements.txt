@@ -96,7 +96,6 @@ pydocstyle==4.0.1
 pyflakes==2.1.1
 Pygments==2.5.2
 pylint==2.4.4
-pyodbc===4.0.0-unsupported
 pyOpenSSL==19.1.0
 pyparsing==2.4.6
 pyrsistent==0.15.7
@@ -162,3 +161,4 @@ Werkzeug==1.0.0
 widgetsnbextension==3.5.1
 wrapt==1.11.2
 wurlitzer==2.0.0
+
