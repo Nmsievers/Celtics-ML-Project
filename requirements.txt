@@ -23,6 +23,7 @@ tensorflow==2.8.0
 tensorflow-io-gcs-filesystem==0.24.0
 termcolor==1.1.0
 testpath==0.4.4
+tornado==6.0.3
 tf-estimator-nightly==2.8.0.dev2021122109
 virtualenv==20.14.0
 virtualenv-clone==0.5.7
